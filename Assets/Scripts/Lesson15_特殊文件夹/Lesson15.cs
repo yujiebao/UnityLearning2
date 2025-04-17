@@ -15,32 +15,32 @@ public class Lesson15 : MonoBehaviour
         #endregion
 
         #region 知识点二 Resources  资源文件夹
-        //注意这个文件夹需要自己创建  可以创建多个Resources 文件夹
-        //这个包会被打包出去 
-        //打包时unity会对其进行加密压缩  
-        //打包后只读，只能通过Resources相关API调用
+        // 注意这个文件夹需要自己创建  可以创建多个Resources 文件夹
+        // 这个包会被打包出去 
+        // 打包时unity会对其进行加密压缩  
+        // 打包后只读，只能通过Resources相关API调用
         #endregion
     
-        #region 知识点三 StreamingAssets  流动资源文件夹
+        #region 知识点三 StreamingAssets  流媒体资源文件夹
         print(Application.streamingAssetsPath);    //streamingAssets路径   
         
-        //注意：需要我们手动创建
+        // 注意：需要我们手动创建
         // 作用
         // 流文件夹
-        //2-1.打包出去不会被压缩加密，可以任由我们摆布
-        //2-2.移动平台只读，PC平台可读可写
-        //2-3.可以放入一些需要自定义动态加载的初始资源
+        // 2-1.打包出去不会被压缩加密，可以任由我们摆布
+        // 2-2.移动平台只读，PC平台可读可写
+        // 2-3.可以放入一些需要自定义动态加载的初始资源
         #endregion
 
         #region 知识点四 persistentDataPath  持久数据文件夹
         print(Application.persistentDataPath); 
 
-        //注意:
-        //不需要我们自己将创建
-        //作用:
-        //固定数据文件夹
-        //3-1.所有平台都可读可写    运行时候可以使用这个文件夹
-        //3-2.一般用于放置动态下载或者动态创建的文件，游戏中创建或者获取的文件都放在其中
+        // 注意:
+        // 不需要我们自己将创建
+        // 作用:
+        // 固定数据文件夹
+        // 3-1.所有平台都可读可写    运行时候可以使用这个文件夹
+        // 3-2.一般用于放置动态下载或者动态创建的文件，游戏中创建或者获取的文件都放在其中
         #endregion
 
         #region Plugin  插件文件夹
@@ -50,7 +50,7 @@ public class Lesson15 : MonoBehaviour
         //需要我们自己创建
         //作用：
         //插件文件夹
-        //不同平台的插件相关文件放在其中
+        // 不同平台的插件相关文件放在其中
         //比如IOS和Android平台
         #endregion
 
@@ -61,11 +61,11 @@ public class Lesson15 : MonoBehaviour
         // print(Application.dataPath + "/Editor");
 
         //注意:
-        //需要我们自己将创建
+        //需要我们自己创建
         //作用:
-        //编辑器文件夹
-        //5-1.开发unity编辑器时，编辑器相关脚本放在该文件夹中
-        //5-2.该文件夹中内容不会被打包出去
+        // 编辑器文件夹
+        // 5-1.开发unity编辑器时，编辑器相关脚本放在该文件夹中
+        // 5-2.该文件夹中内容不会被打包出去
         #endregion
 
         #region Standard Assets 默认资源文件夹
@@ -77,9 +77,9 @@ public class Lesson15 : MonoBehaviour
         //注意:
         //需要我们自己将创建
         //作用:
-        //标准资源文件夹
-        //一般unity自带资源放在这个文件夹中
-        //代码和资源优先被编译
+        // 标准资源文件夹
+        // 一般unity自带资源放在这个文件夹中
+        // 代码和资源优先被编译
         #endregion
     }
     // Update is called once per frame

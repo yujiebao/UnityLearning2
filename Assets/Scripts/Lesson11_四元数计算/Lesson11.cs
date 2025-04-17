@@ -8,9 +8,9 @@ public class Lesson11 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //在进行旋转时 使用四元数相乘进行旋转  
-        //使用欧拉角旋转时存在  不唯一 和 死锁问题
-        //四元数相乘进行旋转时相对的坐标系是自身坐标系
+        // 在进行旋转时 使用四元数相乘进行旋转  
+        // 使用欧拉角旋转时存在  不唯一 和 死锁问题
+        // 四元数相乘进行旋转时相对的坐标系是自身坐标系
 
         #region 知识点一 四元数相乘
         Quaternion q1 = Quaternion.AngleAxis(30,Vector3.up);

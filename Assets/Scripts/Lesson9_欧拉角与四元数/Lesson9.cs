@@ -13,14 +13,16 @@ public class Lesson9 : MonoBehaviour
         // 四元数 Q = [cos (β/2) , sin(β/2)x,sin(β/2)y,sin(β/2)z]
         // Quaternion q = new Quaternion( sin(β/2)x,sin(β/2)y,sin(β/2)z,cos (β/2));
         //计算原理
-        Quaternion q = new Quaternion(1 * Mathf.Sin(30*Mathf.Deg2Rad),0,0,Mathf.Cos(30*Mathf.Deg2Rad));  //绕x轴旋转30度
+        Quaternion q = new Quaternion(1 * Mathf.Sin(30*Mathf.Deg2Rad),0,0,Mathf.Cos(30*Mathf.Deg2Rad));  //绕x轴旋转60度
         GameObject a = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        a.name = "q";
         a.transform.rotation = q;
         
         //unity提供的方法
         //与上面的方法等价
         Quaternion q2 = Quaternion.AngleAxis(60, Vector3.right);
         GameObject a2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        a2.name = "q2";
         a2.transform.rotation = q2;
         #endregion
 
@@ -34,10 +36,10 @@ public class Lesson9 : MonoBehaviour
         #endregion
 
         #region 知识点三 四元数弥补的缺点
-        //1.同一旋转的表示不唯一
+        // 1.同一旋转的表示不唯一
 
-        //2.万向节死锁
-        //达到死锁条件下  仍按照设定的角度旋转
+        // 2.万向节死锁
+        // 达到死锁条件下  仍按照设定的角度旋转
         #endregion
 
     }

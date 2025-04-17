@@ -18,12 +18,12 @@ public class Lesson18 : MonoBehaviour
         #endregion
 
         #region 知识点二 如何手动释放资源
-        //1.卸载指定资源
-        //Resources.UnloadAsset 方法
-        //注意:
-        //该方法 不能释放 Gameobject对象 因为它会用于实例化对象
-        //它只能用于一些 不需要实例化的内容 比如 图片 和 音效 文本等等
-        //一般情况下 我们很少单独使用它
+        // 1.卸载指定资源
+        // Resources.UnloadAsset 方法
+        // 注意:
+        // 该方法 不能释放 Gameobject对象 因为它会用于实例化对象
+        // 它只能用于一些 不需要实例化的内容 比如 图片 和 音效 文本等等
+        // 一般情况下 我们很少单独使用它
 
         //2.卸载未使用资源
         //注意:
